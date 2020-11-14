@@ -1,0 +1,37 @@
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 28px 32px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .sell, .buy {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            font-size: 16px;
+            color: #818181;
+        }
+        .sell {
+            margin-bottom: 33px;
+        }
+    }
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 52px;
+        .btn {
+            margin: 0 24px 0 0;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        
+    }
+}

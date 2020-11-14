@@ -1,6 +1,6 @@
 export const BASE_URL = "/";
-
-export const HOME_PAGE = "/homepage";
+export const DETAILS = "/details";
+export const SUCCESS = "/success";
 
 
 
