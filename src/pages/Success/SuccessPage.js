@@ -1,5 +1,8 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import {
+  ClearConfirmData,
+} from "../../redux/actions/exchange";
 //components
 import { ReactComponent as SvgSuccess} from "../../assets/svg/success.svg";
 import Button from "../../components/Button/Button";
@@ -7,6 +10,11 @@ import Button from "../../components/Button/Button";
 import "./successPage.scss";
 
 export default function SuccessPage() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+   dispatch(ClearConfirmData());
+  }, [])
+  
   return (
     <section className="success-wrapper">
         <SvgSuccess/>

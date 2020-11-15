@@ -64,6 +64,9 @@ input[type=number] {
             align-items: center;
             justify-content: space-between;
             position: relative;
+            .disabled {
+                opacity: 0.8;
+            }
             .loader {
                 position: absolute;
                 right: 20px;

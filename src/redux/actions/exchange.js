@@ -1,113 +1,71 @@
-
 import {
-    GET_ALL_MOVIES_REQUEST,
-    GET_ALL_MOVIES_SUCCESS,
-    GET_ALL_MOVIES_ERROR,
-    SEARCH_MOVIE_REQUEST,
-    SEARCH_MOVIE_SUCCESS,
-    SEARCH_MOVIE_ERROR,
-    DELETE_MOVIE_REQUEST,
-    DELETE_MOVIE_SUCCESS,
-    DELETE_MOVIE_ERROR,
-    ADD_MOVIE_REQUEST,
-    ADD_MOVIE_SUCCESS,
-    ADD_MOVIE_ERROR,
-    UPLOAD_MOVIE_REQUEST,
-    UPLOAD_MOVIE_SUCCESS,
-    UPLOAD_MOVIE_ERROR,
-    GET_SINGLE_MOVIE_REQUEST,
-    GET_SINGLE_MOVIE_SUCCESS,
-    GET_SINGLE_MOVIE_ERROR
-  } from "../constants";
-  
-  export const GetAllMoviesRequest = () => ({
-    type: GET_ALL_MOVIES_REQUEST
-  });
+  GET_PAY_METHODS_REQUEST,
+  GET_PAY_METHODS_SUCCESS,
+  GET_PAY_METHODS_ERROR,
+  CALCULATE_PAY_METHODS_REQUEST,
+  CALCULATE_PAY_METHODS_SUCCESS,
+  CALCULATE_PAY_METHODS_ERROR,
+  SAVE_DETAILS_EXCHANGE,
+  CLEAR_DATA_EXCHANGE,
+  CONFIRM_EXCHANGE_REQUEST,
+  CONFIRM_EXCHANGE_SUCCESS,
+  CONFIRM_EXCHANGE_ERROR,
+  CLEAR_CONFIRM_DATA
+} from "../constants";
 
-  export const GetAllMoviesSuccess = (data) => ({
-    type: GET_ALL_MOVIES_SUCCESS,
-    payload: data
-  });
+export const GetPayMethodsRequest = () => ({
+  type: GET_PAY_METHODS_REQUEST,
+});
 
-  export const GetAllMoviesError = (error) => ({
-    type: GET_ALL_MOVIES_ERROR,
-    payload: error
-  });
-  
-  export const SearchMovieRequest = (data) => ({
-    type: SEARCH_MOVIE_REQUEST,
-    payload: data
-  });
+export const GetPayMethodsSuccess = (data) => ({
+  type: GET_PAY_METHODS_SUCCESS,
+  payload: data,
+});
 
-  export const SearchMovieSuccess = (data) => ({
-    type: SEARCH_MOVIE_SUCCESS,
-    payload: data
-  });
+export const GetPayMethodsError = (error) => ({
+  type: GET_PAY_METHODS_ERROR,
+  payload: error,
+});
 
-  export const SearchMovieError = (error) => ({
-    type: SEARCH_MOVIE_ERROR,
-    payload: error
-  });
+export const CalculatePayMethodsRequest = (data) => ({
+  type: CALCULATE_PAY_METHODS_REQUEST,
+  payload: data,
+});
 
-  export const DeleteMovieRequest = (data) => ({
-    type: DELETE_MOVIE_REQUEST,
-    payload: data
-  });
+export const CalculatePayMethodsSuccess = (data) => ({
+  type: CALCULATE_PAY_METHODS_SUCCESS,
+  payload: data,
+});
 
-  export const DeleteMovieSuccess = (data) => ({
-    type: DELETE_MOVIE_SUCCESS,
-    payload: data
-  });
+export const CalculatePayMethodsError = (error) => ({
+  type: CALCULATE_PAY_METHODS_ERROR,
+  payload: error,
+});
 
-  export const DeleteMovieError = (error) => ({
-    type: DELETE_MOVIE_ERROR,
-    payload: error
-  });
+export const SaveDetailsExchange = (data) => ({
+  type: SAVE_DETAILS_EXCHANGE,
+  payload: data,
+});
 
-  export const AddMovieRequest = (data) => ({
-    type: ADD_MOVIE_REQUEST,
-    payload: data
-  });
+export const ClearDataExchange = () => ({
+  type: CLEAR_DATA_EXCHANGE,
+});
 
-  export const AddMovieSuccess = (data) => ({
-    type: ADD_MOVIE_SUCCESS,
-    payload: data
-  });
+export const ConfirmExchangeRequest = (data) => ({
+  type: CONFIRM_EXCHANGE_REQUEST,
+  payload: data,
+});
 
-  export const AddMovieError = (error) => ({
-    type: ADD_MOVIE_ERROR,
-    payload: error
-  });
+export const ConfirmExchangeSuccess = (data) => ({
+  type: CONFIRM_EXCHANGE_SUCCESS,
+  payload: data,
+});
 
-  export const UploadMovieRequest = (data) => ({
-    type: UPLOAD_MOVIE_REQUEST,
-    payload: data
-  });
+export const ConfirmExchangeError = (error) => ({
+  type: CONFIRM_EXCHANGE_ERROR,
+  payload: error
+});
 
-  export const UploadMovieSuccess = (data) => ({
-    type: UPLOAD_MOVIE_SUCCESS,
-    payload: data
-  });
-
-  export const UploadMovieError = (error) => ({
-    type: UPLOAD_MOVIE_ERROR,
-    payload: error
-  });
-
-  export const GetSingleMovieRequest = (data) => ({
-    type: GET_SINGLE_MOVIE_REQUEST,
-    payload: data
-  });
-
-  export const GetSingleMovieSuccess = (data) => ({
-    type: GET_SINGLE_MOVIE_SUCCESS,
-    payload: data
-  });
-
-  export const GetSingleMovieError = (error) => ({
-    type: GET_SINGLE_MOVIE_ERROR,
-    payload: error
-  });
-
-  
-  
+export const ClearConfirmData = () => ({
+  type: CLEAR_CONFIRM_DATA,
+});

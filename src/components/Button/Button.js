@@ -15,7 +15,7 @@ export default function Button({
   src,
 }) {
   return type === "link" ? (
-    <Link  className={`${className} ${style}`} to={src}>{children}</Link>
+    <Link   onClick={onClick} className={`${className} ${style}`} to={src}>{children}</Link>
   ) : (
     <button
       id={id}

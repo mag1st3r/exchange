@@ -1,7 +1,7 @@
 import { all, fork } from "redux-saga/effects";
-import moviesSagas from "./movies";
+import exchangeSagas from "./exchange";
 
-const sagas = [moviesSagas];
+const sagas = [exchangeSagas];
 
 export function* rootSaga(services = {}) {
   yield all(sagas.map((saga) => fork(saga, services)));
